@@ -1,0 +1,472 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #3B214E;
+    font-family: "gothampro";
+    font-size: 18px;
+    color: #FFE9EC;
+}
+body h1 {
+    font-family: "Blazma-regular";
+    color: #FFB6C1;
+    font-size: 55px;
+}
+
+body h2 {
+    font-family: "Blazma-regular";
+    color: #FFB6C1;
+    font-size: 40px;
+}
+
+body h3 {
+    font-family: "Blazma-regular";
+    color: #FFB6C1;
+    font-size: 30px;
+}
+
+.p1 {
+    color: #FFB6C1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 180px; /* Отступы сверху и снизу по 60 пикселей, слева и справа по 180 пикселей */
+    background-color: #3B214E; /* Цвет фона шапки */
+    font-family: "gothampro";
+}
+
+.logo a {
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+}
+
+.logo-image {
+    height: 40px; /* Высота логотипа, можно регулировать */
+    width: auto; /* Автоматическая ширина, чтобы сохранить пропорции */
+}
+
+.nav ul {
+    display: flex; /* Гибкая вёрстка */
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем маржи */
+}
+
+.nav li {
+    margin-left: 30px; /* Отступ между элементами списка */
+}
+
+.nav a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-size: 15px; /* Размер шрифта для ссылок */
+    color: #FFE9EC; /* Цвет текста */
+}
+
+.nav a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.osnova {
+    padding: 0 180px 0 180px;
+    color: #FFE9EC;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.text h1 {
+    margin: 0;
+}
+
+.langs{
+    display: flex;
+    flex-direction: row;
+}
+
+.langs p {
+    border: #FFB6C1 solid 2px;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+    margin-right: 20px;
+}
+
+.button-start {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+.button-start p {
+    margin-right: 90px;
+}
+
+.button-start img {
+    max-width: 60%;
+    margin-top: 60px;
+}
+
+.know {
+    background-color: #291737;
+    padding: 20px 180px;
+}
+
+.know li {
+    margin: 30px 0;
+}
+
+.know1 {
+    background-color: #291737;
+    padding: 20px 180px;
+    line-height: 2;
+}
+
+.know1 h2 {
+    max-width: 100%;
+}
+
+.know1 img {
+    max-width: 100%;
+}
+
+.know1 a {
+    color: #FFB6C1;
+    text-decoration: none;
+}
+
+.about {
+    padding: 20px 180px;
+    line-height: 2;
+}
+
+.about h2 {
+    margin-bottom: 0;
+}
+
+.about1 {
+    padding: 0px 180px;
+    line-height: 2;
+}
+
+.about1 img {
+    max-width: 100%;
+}
+
+.about1 h2 {
+    margin-bottom: 0;
+}
+
+.about1 a {
+    color: #FFB6C1;
+    text-decoration: none;
+}
+
+.modules {
+    background-color: #291737;
+    padding: 20px 180px;
+}
+
+.modules p {
+    border: #FFB6C1 solid 3px;
+    border-radius: 50px;
+    padding: 15px 30px 15px 30px;
+    transition: background-color 0.1s;
+}
+
+.modules p:hover {
+    border: #FFB6C1 solid 3px;
+    border-radius: 50px;
+    padding: 15px 30px 15px 30px;
+    background-color: #FFB6C1;
+    color: #3B214E;
+}
+
+.study {
+    padding: 20px 180px;
+    text-align: center;
+}
+
+.study h1 {
+    margin-bottom: -25px;
+}
+
+.btngo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    justify-content: space-between;
+    margin-top: 50px;
+    border: #FFB6C1 solid 3px;
+    border-radius: 50px;
+    padding: 0px 30px 0px 30px;
+    transition: background-color 0.1s;
+    margin: 50px 180px 0 180px;
+}
+
+.btngo img {
+    margin-left: auto; /* Прижимаем изображение к правому краю */
+}
+
+.btngo p {
+    margin-right: 10px; /* Добавляем отступ между текстом и изображением */
+}
+
+.btngo a {
+    text-decoration: none;
+    color: #FFE9EC;
+}
+
+.btngo:hover {
+    background-color: #FFB6C1;
+    color: #3B214E;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+}
+
+.modal-content {
+    background-color: #3B214E;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #FFB6C1;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    color: #FFE9EC;
+}
+
+.close {
+    color: #FFB6C1;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #FFE9EC;
+}
+
+/* Стили для формы */
+#registrationForm input {
+    width: 100%;
+    padding: 20px -5px;
+    margin: 10px 0;
+    border: 2px solid #FFB6C1;
+    border-radius: 5px;
+    background-color: #3B214E;
+    color: #FFE9EC;
+}
+
+#registrationForm button {
+    background-color: #FFB6C1;
+    color: #3B214E;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#registrationForm button:hover {
+    background-color: #FFE9EC;
+}
+
+.us {
+    padding: 20px 180px;
+    background-color: #291737;
+}
+
+.abus {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    justify-content: space-between;
+}
+
+.abus p {
+    max-width: 60%;
+}
+
+.abus img {
+    max-height: 300px;
+    margin-right: 5%;
+}
+
+.us1 {
+    padding: 0px 180px;
+}
+
+.us1 img {
+    max-height: 200px;
+    margin-right: 10%;
+}
+
+.us1 a{
+    color: #FFB6C1;
+    text-decoration: none;
+}
+
+.us1 a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 180px; /* Отступы сверху и снизу по 60 пикселей, слева и справа по 180 пикселей */
+    font-family: "gothampro";
+}
+
+.footer li {
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: "Blazma-regular";
+    src: url("../fonts/Blazma-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "gothampro";
+    src: url("../fonts/gothampro.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media (max-width: 1024px) {
+    .header, .footer {
+        padding: 30px 60px;
+    }
+
+    .osnova, .know, .about, .modules, .study, .us {
+        padding: 20px 60px;
+    }
+
+    .btngo {
+        margin: 50px 60px 0 60px;
+    }
+
+    .abus img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header, .footer {
+        padding: 20px 30px;
+    }
+
+    .osnova, .know, .about, .modules, .study, .us {
+        padding: 20px 30px;
+    }
+
+    .btngo {
+        margin: 30px 30px 0 30px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .osnova {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-start {
+        margin-left: 0;
+        align-items: flex-start;
+    }
+
+    .button-start img {
+        max-width: 100%;
+    }
+
+    .abus {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .abus p {
+        max-width: 100%;
+    }
+
+    .abus img {
+        max-height: 200px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* Медиа-запрос для очень маленьких устройств (ширина экрана до 480px) */
+@media (max-width: 480px) {
+    .header, .footer {
+        padding: 10px 15px;
+    }
+
+    .osnova, .know, .about, .modules, .study, .us {
+        padding: 10px 15px;
+    }
+
+    .btngo {
+        margin: 20px 15px 0 15px;
+    }
+
+    .text h1 {
+        font-size: 40px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .know h2, .about h2, .modules h2, .study h1, .us h2 {
+        font-size: 30px;
+    }
+
+    .btngo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btngo p {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btngo img {
+        margin-left: 0;
+    }
+}

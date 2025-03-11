@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <title>модуль 5. практика верстки</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="img/pixel.svg" alt="Логотип" class="logo-image"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">На главную</a></li>
+                <li><a href="module1.html">Модуль 1</a></li>
+                <li><a href="module2.html">2</a></li>
+                <li><a href="module3.html">3</a></li>
+                <li><a href="module4.html">4</a></li>
+                <li><a href="module5.html">5</a></li>
+                <li><a href="module6.html">6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div class="osnova">
+                <div class="text">
+                    <h1>модуль 5. практика верстки</h1>
+                <p>Представим, что вы уже на работе. Как разобрать с макетами в figma и создать сайт с нуля? Ответы на эти вопросы в модуле!</p>
+                </div>
+            </div>
+            <div class="know">
+                <h2>ЧТО БУДЕМ ДЕЛАТЬ?</h2>
+                <ul>
+                    <li>Разберем пример макета веб-страницы</li>
+                    <li>Создадим собственный проект с использованием HTML и CSS</li>
+                    <li>Получим советы по организации кода и структуре папок</li>
+                    <li>Изучим использование DevTools для отладки и анализа созданного проекта</li>
+                </ul>
+            </div>
+            <div class="about1">
+                <h2>какой пример есть?</h2>
+                <p>Давай рассмотрим макет сайта для котокафе:</p>
+                <img src="img/mod5/module5_1.png" alt="photo">
+                <p>Выглядит неплохо. У него четкая структура, благодаря которой пользователь сможет легко ориентироваться по сайту, а также этот макет легко адаптировать под любые устройства, но на самом деле информации маловато. </p>
+                <p>Давай попробуем сверстать этот сайт, но сначала нам нужно разобраться с макетом. Макет можно скопировать к себе в черновики, чтобы случайно не испортить готовую работу.</p>
+                <p>Перейди <a href="https://www.figma.com/design/hx9PC28kdqDDCvgYrgLY2u/Murchim?node-id=0-1&t=tNaYFDES4koa6L2p-1">по этой ссылке</a> чтобы открыть макет. Здесь нас встречает наш будущий сайт, но пока что в виде картинки:</p>
+                <img src="img/mod5/module5_2.png" alt="photo">
+                <p>Чтобы скопировать макет к себе в черновики, тебе нужно нажать на стрелочку справа от названия и выбрать “Dublicate to your drafts”.</p>
+                <img src="img/mod5/module5_3.png" alt="photo">
+                <p>После этого у тебя откроется файл с копией нашего проекта. Теперь ты можешь копировать и изменять любые объекты в макете, не опасаясь за исходник. </p>
+                <p>Вообще сейчас ты можешь попробовать самостоятельно  сверстать сайт по макету, но на всякий случай ниже можно посмотреть подсказки с кодом.</p>
+                <p>Теперь пропишем структуру нашего сайта:</p>
+                <img src="img/mod5/module5_4.png" alt="photo">
+                <p>Перейдем к остальным разделам сайта:</p>
+                <img src="img/mod5/module5_5.png" alt="photo">
+                <p>Осталось создать галерею и форму:</p>
+                <img src="img/mod5/module5_6.png" alt="photo">
+                <p>Посмотрим на наш промежуточный результат:</p>
+                <img src="img/mod5/module5_7.png" alt="photo">
+                <p>Ну, пока что не особо красиво, да и фоток нет... Давай посмотрим как их скачивать:</p>
+                <p>В figma выбери нужную тебе фотографию и нажми на неё. После этого справа откроется меню:</p>
+                <img src="img/mod5/module5_8.png" alt="photo">
+                <p>Нажми на кнопку Export и сохрани фото к себе на компьютер:</p>
+                <img src="img/mod5/module5_9.png" alt="photo">
+                <p>Отлично, теперь эти картинки можно вставить в наш сайт! А теперь пропишем стили:</p>
+                <img src="img/mod5/module5_10.png" alt="photo">
+                <p>Добавим изображение на фон:</p>
+                <img src="img/mod5/module5_11.png" alt="photo">
+                <p>Теперь зададим стили для каждого раздела:</p>
+                <img src="img/mod5/module5_12.png" alt="photo">
+                <img src="img/mod5/module5_13.png" alt="photo">
+                <p>Ну и закончим на подвале и адаптиве:</p>
+                <img src="img/mod5/module5_14.png" alt="photo">
+                <p>Посмотрим на результат:</p>
+                <img src="img/mod5/module5_15.png" alt="photo">
+                <p>Ура! полное совпадение!</p>
+            </div>
+            <div class="know1">
+                <h2>а что такое devtools?</h2>
+                <p>DevTools — это инструмент, который есть в браузере (нажми правую кнопку мыши на странице и выбери "Исследовать элемент"), где ты можешь:</p>
+                <ul>
+                    <li>Просматривать элементы: Смотри, как выглядит твой HTML и CSS в реальном времени.</li>
+                    <li>Изменять стили: Можешь попробовать изменить стили прямо в DevTools и посмотреть результат мгновенно.</li>
+                    <li>Отлаживать JavaScript: Смотри ошибки и отлаживай код.</li>
+                    <li>Проверять производительность: Узнавай, насколько быстро загружается твой сайт.</li>
+                </ul>
+                <p>Сегодня мы хорошо постарались и сделали большую работу. Помни, что с каждым проектом верстка будет даваться тебе всё легче!</p>
+            </div>
+            <div class="btngo">
+                <a href="module6.html"><p>Перейти к следующему модулю</p></a>
+                <a href="module6.html"><img src="img/go.svg" alt="go"></a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="logo">
+            <a href="#"><img src="img/pixel.svg" alt="Логотип" class="logo-image"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li>Связаться с нами:</li>
+                <li><a href="https://t.me/tinesmuf">telegram</a></li>
+                <li><a href="https://vk.com/tinexie">вконтакте</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

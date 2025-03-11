@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXEL - ритм цифрового мира</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="img/pixel.svg" alt="Логотип" class="logo-image"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#know">Знания</a></li>
+                <li><a href="#about">О курсе</a></li>
+                <li><a href="#modules">Модули курса</a></li>
+                <li><a href="#study">Обучение</a></li>
+                <li><a href="#us">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="osnova">
+            <div class="text">
+                <div class="langs">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <h1>ОСНОВЫ РАЗРАБОТКИ</h1>
+                <p>Введение в профессию и<br>
+                    знакомство со средой разработки</p>
+            </div>
+            <div class="button-start">
+                <a href="#study"><img src="img/button_start.svg" alt="начать курс"></a>
+                <p>начать курс</p>
+            </div>
+        </div>
+        <div id="know" class="know">
+            <h2>ЧЕМУ ВЫ НАУЧИТЕСЬ?</h2>
+            <ul>
+                <li>Эффективно работать в Visual Studio Code с расширениями</li>
+                <li>Создавать структуру веб-страниц при помощи HTML</li>
+                <li>Применять стили для оформления с использованием CSS</li>
+                <li>Использовать Flexbox для создания адаптивных макетов</li>
+                <li>Оптимизировать веб-контент для улучшения производительности</li>
+            </ul>
+        </div>
+        <div id="about" class="about">
+            <h2>ЧТО В КУРСЕ?</h2>
+            <p>В этом курсе вы познакомитесь с основами веб-разработки, освоите HTML и CSS, а также научитесь создавать адаптивные макеты с помощью Flexbox. Основная цель курса — предоставить вам необходимые навыки для уверенной работы в фронтенд-разработке, чтобы вы могли легко перейти к созданию своих собственных веб-проектов.
+                Мы начнём с изучения структурирования страниц с помощью HTML и оформления с помощью CSS, а затем углубимся в практику, где разберём основные концепции Flexbox для создания гибких и адаптивных компонентов.
+                В результате курса вы получите крепкий фундамент в веб-разработке, освоите практические навыки верстки и разработаете свой первый проект, который сможет стать основой вашего портфолио. Вы также будете уверены в том, что знаете, как двигаться дальше в изучении фронтенд-технологий.</p>
+        </div>
+        <div id="modules" class="modules">
+            <h2>МОДУЛИ КУРСА</h2>
+                <p> 1. Основы HTML</p>
+                <p> 2. Основы CSS</p>
+                <p> 3. Гайд по Flexbox</p>
+                <p> 4. Основы JavaScript</p>
+                <p> 5. Практика верстки</p>
+                <p> 6. Подготовка портфолио</p>
+        </div>
+        <div id="study" class="study">
+            <h1>не откладывай на завтра</h1>
+            <h1>начни обучение уже сейчас</h1>
+            <div class="btngo">
+                <a href="#"><p>Перейти к урокам</p></a>
+                <a href="#"><img src="img/go.svg" alt="go"></a>
+            </div>
+        </div>
+
+        <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registrationForm">
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                <button type="submit">Готово! Вперед за знаниями!</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Подключение JavaScript -->
+    <script>
+        // Ваш JavaScript-код
+        document.querySelector('.btngo').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('modal').style.display = 'block';
+        });
+
+        document.querySelector('.close').addEventListener('click', function () {
+            document.getElementById('modal').style.display = 'none';
+        });
+
+        window.addEventListener('click', function (e) {
+            if (e.target === document.getElementById('modal')) {
+                document.getElementById('modal').style.display = 'none';
+            }
+        });
+
+        document.getElementById('registrationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            if (name && email) {
+                window.location.href = 'module1.html';
+            } else {
+                alert('Пожалуйста, заполните все поля.');
+            }
+        });
+    </script>
+
+        <div id="us" class="us">
+            <h2>О СОЗДАТЕЛЯХ КУРСА</h2>
+            <div class="abus">
+                <p>Привет! Меня зовут Тина, мне 17 лет, и я студентка второго курса Международного Института Дизайна и Сервиса. Я всегда была увлечена технологиями и веб-разработкой, и именно это вдохновило меня на создание курса "PIXEL".
+                <br>
+                <br>Этот курс был разработан с одной целью — помочь новичкам познакомиться с основами веб-разработки. Я верю, что каждый должен иметь возможность реализовать свои идеи и мечты, а мой курс может помочь вам сделать первый шаг в этом направлении. Мы создадим дружелюбную и поддерживающую атмосферу, где каждый сможет не только научиться новым навыкам, но и получить вдохновение для создания собственных проектов.</p>
+                <img src="img/creator.jpg" alt="creator">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="logo">
+            <a href="#"><img src="img/pixel.svg" alt="Логотип" class="logo-image"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li>Связаться с нами:</li>
+                <li><a href="https://t.me/tinesmuf">telegram</a></li>
+                <li><a href="https://vk.com/tinexie">вконтакте</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

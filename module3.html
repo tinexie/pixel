@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <title>модуль 3. гайд по flexbox</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="img/pixel.svg" alt="Логотип" class="logo-image"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">На главную</a></li>
+                <li><a href="module1.html">Модуль 1</a></li>
+                <li><a href="module2.html">2</a></li>
+                <li><a href="module3.html">3</a></li>
+                <li><a href="module4.html">4</a></li>
+                <li><a href="module5.html">5</a></li>
+                <li><a href="module6.html">6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div class="osnova">
+                <div class="text">
+                    <h1>модуль 3. гайд по flexbox</h1>
+                <p>Научитесь использовать Flexbox, чтобы ваши элементы всегда находили свое место! Это магия, которая делает адаптивный дизайн простым и стильным.</p>
+                </div>
+            </div>
+            <div class="know">
+                <h2>ЧТО БУДЕМ ДЕЛАТЬ?</h2>
+                <ul>
+                    <li>Узнаем, что такое Flexbox и почему это умная идея для верстки</li>
+                    <li>Рассмотрим основные свойства контейнера Flexbox</li>
+                    <li>Научимся управлять выравниванием и пространством между элементами</li>
+                    <li>Реализуем практические примеры использования Flexbox</li>
+                </ul>
+            </div>
+            <div class="about1">
+                <h2>что ещё за flexbox?</h2>
+                <p>Flexbox (или Flexible Box Layout) — это свойство CSS, которое помогает легко и быстро устанавливать расположение и размеры элементов на веб-странице. Представь, что Flexbox — это волшебный помощник, который упрощает расстановку элементов, делая всю невозможную работу за тебя.</p>
+                <p>С Flexbox ты сможешь: <br>
+                    <ul>
+                        <li>Легко выравнивать элементы по горизонтали и вертикали.</li>
+                        <li>Пропорционально распределять пространство между элементами.</li>
+                        <li>Создавать адаптивные и динамичные макеты без лишних усилий.</li>
+                    </ul>
+                </p>
+                <p>Теперь давай разберемся с основными свойствами, которые ты будешь использовать для создания контейнеров Flexbox:</p>
+                <h3>display: flex;</h3>
+                <p>Это свойство активирует Flexbox для элемента. Элементы внутри него станут флекс-элементами.</p>
+
+                <h3>flex-direction</h3>
+                <p>Определяет направление, в котором будут располагаться флекс-элементы.</p>
+                <p>Напрмер row (горизонтально)</p>
+                <img src="img/mod3/module3_1.png" alt="photo">
+                <p> Или column (вертикально)</p>
+                <img src="img/mod3/module3_2.png" alt="photo">
+
+                <h3>justify-content</h3>
+                <p>Устанавливает выравнивание элементов по основной оси (горизонтальной или вертикальной). Используй его, чтобы настроить пространство между элементами.</p>
+                <p>Например flex-start:</p>
+                <img src="img/mod3/module3_3.png" alt="photo">
+                <p>Center:</p>
+                <img src="img/mod3/module3_4.png" alt="photo">
+                <p>Flex-end:</p>
+                <img src="img/mod3/module3_5.png" alt="photo">
+                <p>Space-between:</p>
+                <img src="img/mod3/module3_6.png" alt="photo">
+                <p>Space-around:</p>
+                <img src="img/mod3/module3_7.png" alt="photo">
+
+                <h3>align-items</h3>
+                <p>Устанавливает выравнивание элементов по поперечной оси. Это поможет тебе управлять вертикальным выравниванием.</p>
+                <p>Например flex-start:</p>
+                <img src="img/mod3/module3_8.png" alt="photo">
+                <p>Center:</p>
+                <img src="img/mod3/module3_9.png" alt="photo">
+                <p>Flex-end:</p>
+                <img src="img/mod3/module3_10.png" alt="photo">
+                <p>Stretch:</p>
+                <img src="img/mod3/module3_11.png" alt="photo">
+            </div>
+            <div class="know1">
+                <p>А теперь давай создадим свой интернет-магазин с карточками товаров! Я покажу тебе все шаги, включая фрагменты кода, чтобы тебе было легче понять, как это работает.</p>
+                <p>Начнем со структуры. Нам нужно разметить шапку, подвал и основную часть страницы в body, а также настроить пару моментов в head:</p>
+                <img src="img/mod3/module3_12.png" alt="photo">
+                <p>Далее наполним сайт объектами:</p>
+                <img src="img/mod3/module3_13.png" alt="photo">
+                <p>Ну и добавим карточки, разместив их в div-контейнерах. Я выбрала сумки в качестве примера, именно это повторять необязательно. Попробуй включить креатив и найти какие-то крутые товары для своего первого марктеплейса!</p>
+                <img src="img/mod3/module3_14.png" alt="photo">
+                <p>Теперь займемся стилями. Сначала напишем базу:</p>
+                <img src="img/mod3/module3_15.png" alt="photo">
+                <p>Затем добавим стили для шапки, навигации и подвала, чтобы они выглядели аккуратно и были удобны для использования:</p>
+                <img src="img/mod3/module3_16.png" alt="photo">
+                <p>Теперь настроим стили для контейнера и самих карточек:</p>
+                <img src="img/mod3/module3_17.png" alt="photo">
+                <p>Ну и закончим на стилях для изображений внутри карточек и для кнопок:</p>
+                <img src="img/mod3/module3_18.png" alt="photo">
+                <p>Должно получиться так:</p>
+                <img src="img/mod3/module3_19.png" alt="photo">
+                <p>Теперь ты знаешь, что такое Flexbox и как с помощью него создавать адаптивные макеты! </p>
+                <p>Помни, чем больше ты будешь практиковаться, тем более сложные и стильные проекты сможешь создавать. Если хочется сильнее углубиться в эту тему, более подробный гайд по Flexbox ты сможешь прочитать<a href="https://www.w3schools.com/css/default.asp"> по этой ссылке</a>. Вперед, дерзай и экспериментируй!</p>
+            </div>
+            <div class="btngo">
+                <a href="module4.html"><p>Перейти к следующему модулю</p></a>
+                <a href="module4.html"><img src="img/go.svg" alt="go"></a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="logo">
+            <a href="#"><img src="img/pixel.svg" alt="Логотип" class="logo-image"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li>Связаться с нами:</li>
+                <li><a href="https://t.me/tinesmuf">telegram</a></li>
+                <li><a href="https://vk.com/tinexie">вконтакте</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
